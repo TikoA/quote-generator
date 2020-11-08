@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Random Quote Machine</title>
+</head>
+<body>
+    <div :style="{background: color, color: color}" class="main">
+
+        <div id="quote-box">
+            <h2 id="text">
+                {{quote.en}}
+            </h2>
+            <p id="author">
+                {{quote.author}}
+            </p>
+            <div class="buttons">
+                <a :style="{background: color, color: 'white'}" id="tweet-quote" :href="`https://twitter.com/intent/tweet?hashtags=quotes&text=${tweetQuote}`">
+                    Tweet
+                </a>
+                <button :style="{background: color}" id="new-quote" @click="getQuote">New Quote</button>
+            </div>
+            
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
