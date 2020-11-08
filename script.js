@@ -27,9 +27,3 @@ var vm = new Vue({
     this.getQuote()    
   },
 })
-
-// %20 - space replace(/\s/g, '%20');
-
-// %2C - comma replace(/,/g, '%2C');
-
-// %22 - enter replace(/\\n/g,'%22')
