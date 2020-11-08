@@ -1,1 +1,1 @@
-# Quote Generator madie via Vue, SCSS
+# Quote Generator madie via Vue, scss
